@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h1>Sign up</h1>
+      <div>
+        <form id="submiting">
+          <div>
+            <div>
+              <label for="text">username</label>
+              <input
+                type="text"
+                required
+                placeholder="enter your name"
+                id="name"
+              />
+            </div>
+            <span id="nameerror"></span>
+          </div>
+          <div>
+            <div>
+              <label for="email">email</label>
+              <input type="email" placeholder="enter your email" id="email" />
+            </div>
+            <span id="emailerror"></span>
+          </div>
+          <div>
+            <div>
+              <label for="password">password</label>
+              <input
+                type="password"
+                required
+                placeholder="enter your password"
+                id="password"
+              />
+            </div>
+            <span id="passworderror"></span>
+          </div>
+          <div class="mb-3">
+            <div>
+              <label for="confirmPassword" class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+              />
+            </div>
+            <span class="validation-message" id="confirmPasswordMessage"></span>
+          </div>
+
+          <div class="mb-3">
+            <label for="dob" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" name="dob" />
+            <span class="validation-message" id="dobMessage"></span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <div>
+              <input type="radio" id="genderMale" name="gender" value="male" />
+              <label for="genderMale">Male</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="genderFemale"
+                name="gender"
+                value="female"
+              />
+              <label for="genderFemale">Female</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="genderOther"
+                name="gender"
+                value="other"
+              />
+              <label for="genderOther">Other</label>
+            </div>
+            <span class="validation-message" id="genderMessage"></span>
+          </div>
+
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="terms"
+              name="terms"
+              required
+            />
+            <label for="terms" class="form-check-label"
+              >I agree to the Terms and Conditions</label
+            >
+            <span class="validation-message" id="termsMessage"></span>
+          </div>
+
+          <div>
+            <button type="submit" id="submit-btn">submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="./form.js"></script>
+  </body>
+</html>
